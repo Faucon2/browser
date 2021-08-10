@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>API AntiFraude</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/browser.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script type="application/javascript" src="js/jquery.js"></script>
+    <script type="application/javascript" src="js/menu.js"></script>
+    <script type="application/javascript" src="js/browser.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="application/javascript" src="js/fraude.js"> </script>
+</head>
+<body>
+    <div id='cssmenu' class="top-menu">
+        <ul>
+            <li><a class="active" href='index.html'><span><i class="fa fa-home"></i> <img src="img/logo14.png" /> </span></a></li>
+            <li class='has-sub'><a href='#'><span>Model</span></a>
+            </li>
+            <li class='has-sub'><a href='#'><span>Tools</span></a>  
+            </li>
+            <li class='last align-right has-sub'><a href='#'><span>About</span></a>
+                <ul>
+                    <li><a href='#'><span>News</span></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+<div class="container">
+    <div class="middle-container centered">
+        <h1 class="logo"><i class="fa fa-search-plus"></i>   Anti-Fraude </h1>
+        <div><input id="numTel" type="tel"  placeholder="Numéro de téléphone..."/>
+        <input type="button" value="Check Opérateur" onclick="doFunction()" /> <br/><div id="importSpin"><img src="img/loading.gif"></div> </div> <br/>
+        <div id="resultat">  
+            <label for="operator"> Opérateur Origine :</label>  
+            <p id="api_operator" style="background-color: rgb(0, 225, 255);"></p>
+             <p id="api_outputof" style="background-color: mediumblue;"></p> 
+            <label id="risque"> fraude Potentielle Opérateur :</label>  
+            <p id="api_risque" style="background-color: rgb(255, 0, 128);"></p> 
+            <p id="api_outputof" style="background-color: mediumblue;"></p> 
+        
+        </div>
+        <div id="badrequest"> <p id="bad" style="background-color: rgb(255, 0, 0);"></p> </div>
+          <br/>
+          <p class="footer-caption">This website has been designed for Chrome, Firefox, Safari. Do not use Internet Explorer</p>
+     </div>
+</div>
+</body>
+</html>
+
